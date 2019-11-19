@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 1- Part 1</title>
+	<script type="text/javascript" src="validation.js"></script>	
+</head>
+<body>
+	<p>Please enter the following mandatory information:</p>
+	<form name="form" method="post" onsubmit="return validateForm()">
+		<!--First Name-->
+		<div>
+			First Name:<input type="text" name="firstname">
+		</div><br>
+		<!--Last Name-->
+		<div>
+			Last Name:<input type="text" name="lastname">
+		</div><br>
+		<!--Gender Type-->
+		<div>Gender Type:<br><br>
+			<input type="radio" name="gender" value="male">Male<br>
+			<input type="radio" name="gender" value="female">Female<br>
+			<input type="radio" name="gender" value="other">Other<br>
+		</div><br>
+		<!--Employment situation-->
+		<div>
+			Employment situation:<br>
+			<input type="checkbox" name="employment" value="employ">Employ<br>
+			<input type="checkbox" name="employment" value="notEmploy">Not Employ<br>
+		</div><br>
+		<!--Car brand-->
+		<div>Current car brand:<br>
+			<select name="car">
+				<option value="0">not selected</option>
+				<option value="1">Volvo</option>
+				<option value="2">Saab</option>
+				<option value="3">honda</option>
+				<option value="4">toyota</option>
+			</select>
+		</div><br>
+		<div>
+			<input type="submit" value="Submit">
+		</div>		
+	</form>
+	
+</body>
+</html>
